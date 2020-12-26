@@ -40,5 +40,7 @@ urlpatterns = [
         name='password_change_done'),
     url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/$',
         views.topic_posts, name='topic_posts'),
+    url(r'^boards/(?P<pk>\d+)/topics/(?P<topic_pk>\d+)/reply/$',
+        views.reply_topic, name='reply_topic'),
     url(r'^admin/', admin.site.urls),
 ]
