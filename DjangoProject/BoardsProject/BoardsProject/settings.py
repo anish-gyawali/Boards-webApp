@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Boards',
     'widget_tweaks',
     'accounts',
+    'Boards',
 ]
 
 MIDDLEWARE = [
@@ -54,6 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'BoardsProject.urls'
+LOGIN_REDIRECT_URL = 'home'
 
 TEMPLATES = [
     {
