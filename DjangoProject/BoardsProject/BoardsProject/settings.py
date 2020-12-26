@@ -55,7 +55,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'BoardsProject.urls'
 LOGIN_REDIRECT_URL = 'home'
-
+LOGIN_URL = 'login'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -128,3 +128,4 @@ STATICFILES_DIRS = [
 ]
 
 LOGOUT_REDIRECT_URL = 'home'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
